@@ -8,7 +8,7 @@ This small app is using a library packaged with ng-packagr. This library has not
 because it's just a PoC for all I need to do within a lib, but it'll never be of any public use.
 
 This library is named web-components in package.json and is actually the on produced from my repository 
-"nx-component-lib"
+"nx-component-lib". I personally use sinopia as a repo when I need to test such publication to a repo.
 
 ## Development server
 
