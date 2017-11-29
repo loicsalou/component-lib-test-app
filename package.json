@@ -33,6 +33,7 @@
     "primeng": "5.0.0-rc.0",
     "rxjs": "^5.5.2",
     "web-components": "0.7.1",
+    "web-components-ng-packagr": "0.7.1",
     "zone.js": "^0.8.18"
   },
   "devDependencies": {

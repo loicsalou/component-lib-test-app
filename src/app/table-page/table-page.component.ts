@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {pageScaleTransition} from '../common/page-transition.animation';
-import {Column, LocalPreferencesManagerService, TableModelHandler} from 'web-components';
+import {Column, LocalPreferencesManagerService, TableModelHandler} from 'web-components-ng-packagr';
 
 @Component({
              selector: 'app-table-page',

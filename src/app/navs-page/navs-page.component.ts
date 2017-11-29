@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {pageScaleTransition} from '../common/page-transition.animation';
-import {Navs} from 'web-components';
+import {Navs} from 'web-components-ng-packagr';
 
 @Component({
              selector: 'app-navs-page',

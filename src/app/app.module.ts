@@ -13,7 +13,7 @@ import {AnimationModule, MyExpandoComponent} from './animation/animation.module'
 import {
   LocalPreferencesManagerService, NavsModule, PreferencesManagerModule, SwiperModule, TableModule,
   ZasCommonModule
-} from 'web-components';
+} from 'web-components-ng-packagr';
 
 @NgModule({
             imports: [

@@ -4,7 +4,7 @@ import {FeaturePageComponent} from './feature-page/feature-page.component';
 import {RouterModule} from '@angular/router';
 import {DataTableModule} from 'primeng/primeng';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {TableModule} from 'web-components';
+import {TableModule} from 'web-components-ng-packagr';
 
 @NgModule({
             imports: [
