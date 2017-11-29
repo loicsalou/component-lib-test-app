@@ -1,0 +1,4 @@
+<div class="page navs-page-component" [@pageScaleTransition]="state">
+  <h3>Exemple d'utilisation du NAVS</h3>
+  <input zasNavs [emitOnEnterOnly]="true" [(ngModel)]="navs" (navsChanged)="navsChanged($event)">
+</div>

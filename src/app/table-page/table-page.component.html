@@ -1,0 +1,38 @@
+<div [@pageScaleTransition]="state">
+  <fieldset class="page swiper-page-component">
+    <legend><h3>Table: un exemple de wrapper pour la table PrimeNg</h3></legend>
+    <div style="display: flex">
+      <p-dataTable #zasTable *ngIf="bottlesModel"
+                   [value]="bottlesModel.data" resizableColumns="true" reorderableColumns="true"
+                   (onColResize)="bottlesModel.colResize($event)"
+                   [rows]="10" [paginator]="bottlesModel.paginatorDisplayed" [rowsPerPageOptions]="[10,15,20,50]"
+                   (onColReorder)="bottlesModel.colReordered($event)"
+                   (onSort)="bottlesModel.sorted($event)" [sortField]="bottlesModel.sortOptions?.field"
+                   [sortOrder]="bottlesModel.sortOptions?.order">
+        <p-header>
+          <zas-table-header #zasHeader [tableModel]="bottlesModel" [table]="zasTable"></zas-table-header>
+        </p-header>
+        
+        <p-column *ngFor="let col of bottlesModel.visibleColumns" [field]="col.field"
+                  header="{{col.label}}"
+                  [sortable]="col.sortable" [style]="col.style">
+          
+          <ng-template pTemplate="body" let-row="rowData">
+            <ng-container [ngSwitch]="col.field">
+              <div *ngSwitchCase="'link'">
+                <a [href]="row[col.field].url" target="_blank">{{row[col.field].label}}</a>
+              </div>
+              
+              <zas-standard-cell *ngSwitchDefault [col]="col" [row]="row"><img src="../../favicon.ico"/>
+              </zas-standard-cell>
+            </ng-container>
+          </ng-template>
+        </p-column>
+        
+        <p-footer class="d-flex align-items-center">
+          <zas-table-footer [tableModel]="bottlesModel" class="ml-auto"></zas-table-footer>
+        </p-footer>
+      </p-dataTable>
+    </div>
+  </fieldset>
+  <div>

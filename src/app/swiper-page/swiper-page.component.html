@@ -1,0 +1,28 @@
+<div class="d-flex flex-row page swiper-page-component" [@pageScaleTransition]="state">
+  <img [src]="'/assets/caisses-01.jpg'">
+  <fieldset>
+    <legend><h3>Swiper: pour faire défiler un composant horizontalement</h3></legend>
+    <div style="display: flex">
+      <zas-swiper (onSwipe)="swiped($event)">
+        <div>
+          <img [src]="'/assets/component-lib/cave-'+page+'.png'">
+        </div>
+      </zas-swiper>
+      <div class="doc">
+        <ul>
+          <li>défilement de gauche à droite ou de droite à gauche</li>
+          <li>tout composant HTML peut être intégré</li>
+          <li>@Output() 'onSwipe' donne le sens (négatif vers la gauche, positif vers la droite)</li>
+          <li>changement sur une animation de défilement</li>
+        </ul>
+        <code class="html tag start-tag">
+          <pre>&lt;app-swiper (onSwipe)="swiped($event)"&gt;</pre>
+          <pre>   &lt;div&gt;</pre>
+          <pre>      &lt;img [src]="'/assets/component-lib-zas/cave-'+page+'.png'"&gt;</pre>
+          <pre>   &lt;/div&gt;</pre>
+          <pre>&lt;/app-swiper&gt;</pre>
+        </code>
+      </div>
+    </div>
+  </fieldset>
+</div>

@@ -1,6 +1,6 @@
 import { TestAppPage } from './app.po';
 
-describe('test-app App', () => {
+describe('component-lib-test-app App', () => {
   let page: TestAppPage;
 
   beforeEach(() => {
