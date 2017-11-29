@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
+## warning
+
+This small app is using a library packaged with ng-packagr. This library has not been published to registry.npmjs.org 
+because it's just a PoC for all I need to do within a lib, but it'll never be of any public use.
+
+This library is named web-components in package.json and is actually the on produced from my repository 
+"nx-component-lib"
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
